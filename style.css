@@ -1,0 +1,420 @@
+/* 
+Theme Name: InternACTional
+Text Domain: InternACTional
+Description: Custom theme for the project InternACTional
+Author: Rimantė Ražinskaitė
+*/
+
+body{
+    font-family: roboto;
+    color: #0F0F0F;
+    line-height: 1.7;
+    background: #F2F2F2;
+}
+
+#home-header {
+    
+    background-image: url("assets/images/heading.png");
+    background-size: cover;
+}
+
+header {
+    background-color: #424268;
+}
+
+footer {
+    color: #353535;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+.blog-showcase .img-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.blog-showcase img{
+
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.blog-showcase .card-title{
+    text-transform: none;
+    
+}
+
+.post-img {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to top, rgba(66, 66, 104, 1.0),rgba(66, 66, 104, 0.4)), 
+    url('images/blog-photo-1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-post {
+    background-color: white;
+    position: relative;
+    top: -150px;
+    box-shadow: 0px 4px 30px rgba(183, 183, 183, 0.25);
+}
+
+.more .row:nth-child(2) .card{
+    position: relative;
+    top: -50px;
+}
+
+.more .row:nth-child(2) .card ul{
+    list-style: none;
+}
+
+.more .row:nth-child(2) .card ul li:before{
+    content: "\2022";
+    color: #EB4D55;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 0.5;
+    display: inline-block;
+    width: 0.75em;
+    margin-left: -1em;
+    position: relative;
+    top: 0.4rem;
+}
+
+.more .row:nth-child(3) .card{
+    position: relative;
+    top: -100px;
+}
+
+.more .row:nth-child(3) .card ol {
+    list-style: none;
+    counter-reset: special-counter;
+}
+
+.more .row:nth-child(3) .card ol li {
+    counter-increment: special-counter;
+    margin-bottom: 1em;
+}
+
+.more .row:nth-child(3) .card ol li::before {
+    content: counter(special-counter) " ";
+    background-color:  #EB4D55;
+    border-radius: 50%;
+    color: #F2F2F2;
+    font-weight: 900;
+    font-size: 90%;
+    width: 1.7em;
+    margin-left: -1.7em;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    right: 0.4em;
+
+}
+.card{
+    background-color: #F8F8F8;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 12px 60px 4px rgba(186, 185, 185, 0.3);
+}
+
+.page .card {
+    border-radius: 3rem;
+}
+
+.about .card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about .card img {
+    width: 40%;
+}
+
+.stories img {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.join-us-form{
+    font-size: 90%;
+}
+
+/* HEADERS */
+
+
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 577px) {
+    h1 {font-size: 3.5rem;}
+    h2 {font-size: 2.5rem;}
+    h3 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    h4 {font-size: 1.7rem;}
+    h5 {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    h6 {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    .blog-post {
+        border-radius: 60px;
+        padding: 7% 10% 7% 8%;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    h1 {font-size: 2.5rem;}
+    h2 {font-size: 2rem;}
+    h3 {
+        margin-top: 2rem;
+        font-size: 1.7rem;
+    }
+    h4 {font-size: 1.5rem;}
+    h5 {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    h6 {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .blog-post {
+        border-radius: 30px;
+        padding: 15% 10% 7% 8%;
+    }
+}
+
+.page h2, .page-title {
+    color: #424268;
+}
+
+h5 a, h6 a {
+    color: #0F0F0F;
+    text-decoration: none;
+}
+
+a {
+    color: #424268;
+}
+
+a:hover {
+    color:#2B2B54;
+}
+
+.tags a{
+    text-decoration: none;
+    color: #353535;
+}
+
+.tags a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.meta {
+    font-style: italic;
+    color: #353535;
+}
+
+.pagination {
+    align-items: center;
+}
+
+.pagination h2 {
+    font-size: 1rem;
+    text-transform: none;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
+
+/* BACKGROUNDS: */
+.white-bg {background: #F2F2F2;}
+
+.pale-bg {background: #F8F8F8;}
+
+.bg-light {background-color: #F8F8F8 !important;}
+
+/* BUTTONS */
+.btn-lg{
+    padding: 1.2rem 2.5rem;
+    border-radius: 2.2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+}
+
+.btn-sm{
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.8rem;
+}
+
+
+header .btn-light{
+    color: #424268;
+    background-color: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    filter: drop-shadow(0px 4px 60px rgba(248, 248, 248, 0.5));
+}
+
+header .btn-light:hover{
+    color: #f2f2f2;
+    background-color: #424268;
+    border: 5px solid #f2f2f2;
+    filter: drop-shadow(0px 4px 60px rgba(248, 248, 248, 0.2));
+}
+
+.btn-primary {
+    color: #F2F2F2;
+    background-color: #424268;
+    border: none; 
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active  {
+    background-color: #2B2B54;
+    box-shadow: 0px 4px 50px rgba(43, 43, 84, 0.3);
+    
+}
+
+.btn-secondary {
+    color: #353535;
+    text-decoration: none;
+    background-color: #D6D5D5;
+    border: none;
+    border-radius: 25px;
+}
+
+
+.form-check-input:checked {
+    background-color: #424268;
+    border-color: #424268;
+}
+
+#navbarNav ul li {
+    padding: 0.4em 0em 0.4em 1.6em;
+
+}
+/* nav-item mx-3 */
+
+#navbarNav ul li a {
+    text-decoration: none;
+    color: rgba(0,0,0,.55);
+    font-size: 105%;
+}
+
+#navbarNav ul li a:hover{
+    color:  #424268;
+    font-weight: bold;
+}
+
+/* CONTACT US FORM: */
+.contactWidget .wpforms-container-full .wpforms-head-container .wpforms-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #424268;
+}
+
+.contactWidget .wpforms-container-full .wpforms-form .wpforms-field-label {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.contactWidget .wpforms-container-full .wpforms-form .wpforms-required-label {
+    color: #424268;
+}
+
+.contactWidget .wpforms-container-full .wpforms-form .wpforms-field-large, .contactWidget .wpforms-container-full .wpforms-form .wpforms-field-medium {
+    border-radius: .3rem;
+    line-height: 1.5;
+    color: #212529;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.contactWidget .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit {
+    color: #F2F2F2;
+    background-color: #424268;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 110%;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.contactWidget .wpforms-container-full .wpforms-form .wpforms-submit-container .wpforms-submit:hover {
+    background-color: #2B2B54;
+    box-shadow: 0px 4px 50px rgba(43, 43, 84, 0.3);
+}
+
+.reviewer-image {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.reviewer-image img{
+    border-radius: 50%;
+}
+
+.reviewer-info {
+    width: 80%;
+    font-size: 90%;
+    line-height: 1.3;
+}
+
+.reviewer-info p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-brand img{
+    max-height: 1.25em;
+    width: auto;
+    padding-right: 0.25em;
+}
+
+.navbar-brand span{
+    font-size: 1.15rem;
+}
+
+body#wpadminbar .fixed-top{
+    top: 28px;
+}
+
+
+.error-404 h1{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #eb4d55;
+}
+
+.search input {
+    border-radius: .3rem;
+    line-height: 1.5;
+    color: #212529;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
