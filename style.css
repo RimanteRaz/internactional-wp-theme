@@ -37,10 +37,10 @@ footer {
 }
 
 .blog-showcase img{
-
     object-fit: cover;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    align-self: flex-start;
 }
 
 .blog-showcase .card-title{
@@ -417,4 +417,9 @@ body#wpadminbar .fixed-top{
     color: #212529;
     border: 1px solid #ced4da;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.partner-logo-div {
+    display: flex;
+    align-items: flex-start;
 }
