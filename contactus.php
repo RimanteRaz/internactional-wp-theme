@@ -23,7 +23,9 @@
                 <h3 class="mb-5">Or contact us directly</h3>
                 <div class="col-lg-3 col-sm-6 col-12 mb-3">
                     <div class="card px-3 h-100">
+                        <div>
                         <img src="<?php echo wp_get_attachment_url(get_theme_mod('intact-contacts-box1-image')) ?>" class="card-img-top pt-4 px-3 mt-3" alt="...">
+                        </div>
                         <div class="card-body px-3 pb-4">
                             <h6><?php echo get_theme_mod('intact-contacts-box1-title') ?></h6>
                             <p class="card-text"><?php echo get_theme_mod('intact-contacts-box1-text') ?></p>
