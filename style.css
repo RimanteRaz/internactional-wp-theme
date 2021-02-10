@@ -37,10 +37,10 @@ footer {
 }
 
 .blog-showcase img{
-
     object-fit: cover;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    align-self: flex-start;
 }
 
 .blog-showcase .card-title{
